@@ -1,0 +1,39 @@
+ 20.,40.,20.         ;MINSTEP,MAXSTEP,STEPSIZE
+ false,true         ,spin raytracing
+-1.,.000511       	 	,particle z and mass (GeV)
+1.,1.7588e11,1.,.000511  unit: magneton, rad s-1 T-1, - , Gev
+INPUT DRIFT:
+INPUTDRI
+absolute
+0.,0.,0.
+0.,0.,0.
+-300., -500.,-160.
+ 300., 500.0, 160.
+1
+0
+0
+none
+r
+0.
+0
+list
+y,100., 0.,none,0.,0.,0.,0.,0.,0.
+eol
+septum:******************************************2
+septummm                ;name of the region (char*8)
+absolute                ;name of the reference region (char*8)
+0.,1750.,0.0            ;origin of region in refrence region
+0., 0.,0.                ;rotations /z,x,y
+-140.,-1740.,-390.      ;minbox x,y,z
+ 140., 740.,390.        ;maxbox
+3                       ;method = runge-khuta
+3                       ;itype = map
+5                       ;indfi = 3d-map
+mapfiles/apex_snake.map                 
+r
+1.0          ;field multiplying factor
+0                       ;number of additional data
+list                    ;method of determining endplanes
+y, -750., 0.,none,-200.,200.,200.,200.,-200.,200.
+y, 700., 0.,none,-200.,400.,400.,200.,-200.,200
+eol                     ;end of list
