@@ -1,0 +1,12 @@
+fort.*
+*~
+DIR.DAT
+TRAJ.DAT
+*.so
+*.d
+*.pcm
+plots/*
+rootfiles/*
+*#
+snake
+sn-rand.dat
