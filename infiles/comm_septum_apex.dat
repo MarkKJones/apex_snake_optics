@@ -34,6 +34,7 @@ r
 1.0          ;field multiplying factor
 0                       ;number of additional data
 list                    ;method of determining endplanes
-y, -750., 0.,none,-200.,200.,200.,200.,-200.,200.
-y, 700., 0.,none,-200.,400.,400.,200.,-200.,200
+y, -750., 0.,none,-150.,150.,200.,200.,80.,80.
+y, 0., 0.,none,-150.,150.,400.,400.,20.,20.
+y, 700., 0.,none,-150.,150.,400.,400.,20.,20.
 eol                     ;end of list

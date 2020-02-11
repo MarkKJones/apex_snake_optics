@@ -1,0 +1,64 @@
+ 20.,40.,20.         ;MINSTEP,MAXSTEP,STEPSIZE
+ false,true         ,spin raytracing
+-1.,.000511       	 	,particle z and mass (GeV)
+1.,1.7588e11,1.,.000511  unit: magneton, rad s-1 T-1, - , Gev
+INPUT DRIFT:
+INPUTDRI
+absolute
+0.,0.,0.
+0.,0.,0.
+-300., -500.,-160.
+ 300., 500.0, 160.
+1
+0
+0
+none
+r
+0.
+0
+list
+y,100., 0.,none,0.,0.,0.,0.,0.,0.
+eol
+septum:******************************************2
+septummm                ;name of the region (char*8)
+absolute                ;name of the reference region (char*8)
+0.,1750.,0.0            ;origin of region in refrence region
+0., 0.,0.                ;rotations /z,x,y
+-140.,-1740.,-390.      ;minbox x,y,z
+ 140., 740.,390.        ;maxbox
+3                       ;method = runge-khuta
+3                       ;itype = map
+5                       ;indfi = 3d-map
+mapfiles/apex_snake.map                 
+r
+0.76842          ;field multiplying factor
+0                       ;number of additional data
+list                    ;method of determining endplanes
+y, -956.758, 0.,none,-150.,150.,200.,200.,61.,61.
+y, 0., 0.,none,-150.,150.,400.,400.,20.,20.
+y, 400., 0.,none,-150.,150.,400.,400.,20.,20.
+eol                     ;end of list
+Q1entrance:
+Q1ENTRAN            ;NAME OF THE REGION (CHAR*8)
+absolute            ;NAME OF THE REFERENCE REGION (CHAR*8)
+0.,2602.60,344.2    ;ORIGIN OF REGION IN REFRENCE REGION
+0.,12.5,0.,           ;ROTATIONS
+-160.,-500.,-150.   ;MINBOX X,Y,Z
+ 160., 475.,+600.   ;MAXBOX
+3                   ;METHOD = RUNGE-KHUTA
+2                   ;ITYPE = ANALYTIC
+7                   ;INDFI = ENTRANCE MULTIPOLE
+none                ;FIELD FILENAME
+r
+1.0                 ;FIELD MULTIPLYING FACTOR
+6                   ;NUMBER OF ADDITIONAL DATA
+-0.2245              ;QUAD FIELD AT R (Tesla)
+0.0                 ;HEX FIELD AT R
+0.0                 ;OCT FIELD AT R
+0.0                 ;DEC FIELD AT R
+0.0                 ;DDEC FIELD AT R
+150.                ;R IN mm
+list                ;METHOD OF DETERMINING ENDPLANES
+y,-307., 0.,none,149.2,149.2,0.,0.,0.,0.
+y,470., 0. ,none,149.2,149.2,0.,0.,0.,0.
+eol                 ;END OF list
