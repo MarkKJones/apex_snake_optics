@@ -31,7 +31,7 @@ absolute                ;name of the reference region (char*8)
 5                       ;indfi = 3d-map
 mapfiles/apex_snake.map                 
 r
-1.0          ;field multiplying factor
+0.76842          ;field multiplying factor
 0                       ;number of additional data
 list                    ;method of determining endplanes
 y, -750., 0.,none,-150.,150.,200.,200.,80.,80.
