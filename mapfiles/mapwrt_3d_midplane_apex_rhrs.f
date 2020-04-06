@@ -22,10 +22,13 @@
       CALL READ_TOS_MAP(FILE1,NDX,NDY,ndz,posx,posy,posz
      >    ,bfx,bfy,bfz,ierr)
          write(*,*) 'finished reading tosca file'  
-       XMIN=posX(1,1,1)
 c       YMIN=posX(1,1,1)
-c       XMIN=-posx(ndx,ndy,ndz)
+       XMIN=posX(1,1,1)
        XMax=posX(ndx,ndy,ndz)
+c
+       XMIN=-posx(ndx,ndy,ndz)
+       XMAX=posX(1,1,1)
+c
        YMIN=-posy(ndx,ndy,ndz)
        YMax=posy(ndx,ndy,ndz)
        ZMAX=-posz(ndx,ndy,ndz)
@@ -42,7 +45,7 @@ c      ndx = ndx+80
       INDEX=NDX*ndy*ndz
        write(*,*) ' index = ',index
       L=0
-       DO 41 ix=1,ndx   ! horizontal zsnake             
+       DO 41 ix=ndx,1,-1   ! horizontal zsnake             
        DO 431 iz=1,ndz ! along beam ysnake
        DO 420 iy=1,ndy ! vertical xsnake
        L = L + 1
