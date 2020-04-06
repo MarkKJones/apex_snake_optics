@@ -8,4 +8,4 @@ List of files:
 * __comm_8.dat__     : Included in __comm_8_dir.dat__ , need extra parameters for the RAYTRACE style dipole
 * __comm_septum_apex.dat__ : The input file for APEX septum alone
 * __comm_septum_Rhrs_apex_1104setting.dat__ : RHRS snake input file
-* __comm_septum_hrs_apex_1104setting.dat__ : LHRS snake input file
+* __comm_septum_Lhrs_apex_1104setting.dat__ : LHRS snake input file
