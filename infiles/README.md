@@ -18,3 +18,4 @@ Ran tracks through snake and found at 70cm need 1.09 GeV/c to get 12.5 total ben
 In __comm_septum_apex.dat__ the septum field scaled to 0.76842 for  p=0.837596.
 
 
+
