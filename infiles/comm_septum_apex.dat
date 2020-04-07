@@ -8,7 +8,7 @@ absolute
 0.,0.,0.
 0.,0.,0.
 -300., -500.,-160.
- 300., 500.0, 160.
+ 300., 800.0, 160.
 1
 0
 0
@@ -17,15 +17,15 @@ r
 0.
 0
 list
-y,100., 0.,none,0.,0.,0.,0.,0.,0.
+y,780., 0.,none,0.,0.,0.,0.,0.,0.
 eol
 septum:******************************************2
 septummm                ;name of the region (char*8)
 absolute                ;name of the reference region (char*8)
 0.,1750.,0.0            ;origin of region in refrence region
 0., 0.,0.                ;rotations /z,x,y
--140.,-1740.,-390.      ;minbox x,y,z
- 140., 740.,390.        ;maxbox
+-140.,-1630.,10.      ;minbox x,y,z
+ 140., 740.,380.        ;maxbox
 3                       ;method = runge-khuta
 3                       ;itype = map
 5                       ;indfi = 3d-map
@@ -34,7 +34,7 @@ r
 0.76842          ;field multiplying factor
 0                       ;number of additional data
 list                    ;method of determining endplanes
-y, -750., 0.,none,-150.,150.,200.,200.,80.,80.
+y, -956.758, 0.,none,-150.,150.,200.,200.,61.,61.
 y, 0., 0.,none,-150.,150.,400.,400.,20.,20.
 y, 700., 0.,none,-150.,150.,400.,400.,20.,20.
 eol                     ;end of list
